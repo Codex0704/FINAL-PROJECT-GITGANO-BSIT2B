@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo-section">
+                <i class="fa-solid fa-droplet logo-icon"></i>
+                <div class="logo-text">
+                    <h2>AquaFlow</h2>
+                    <span>Water Supply System</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-faucet-drip"></i> Water Sources</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-industry"></i> Treatment Plants</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-database"></i> Reservoirs</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bezier-curve"></i> Pipeline</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-location-dot"></i> Zones</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-user-group"></i> Consumer</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-file-invoice"></i> Reports</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bell"></i> Alerts</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+
+            <div class="sidebar-banner">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h4>Every drop counts.</h4>
+                    <p>Let's build a better future together.</p>
+                </div>
+            </div>
+
+            <div class="admin-profile">
+                <div class="admin-avatar">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="admin-info">
+                    <h4>ADMIN</h4>
+                    <span>System Administrator</span>
+                </div>
+                <i class="fa-solid fa-chevron-down profile-arrow"></i>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-header">
+                <div class="header-title">
+                    <h1>Dashboard</h1>
+                    <p>Overview of the water supply system</p>
+                </div>
+                <div class="header-controls">
+                    <div class="weather-widget">
+                        <i class="fa-solid fa-cloud-rain weather-icon"></i>
+                        <div>
+                            <span class="temp">24°C</span>
+                            <span class="weather-desc">Light Rain</span>
+                        </div>
+                    </div>
+                    <div class="icon-notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge"></span>
+                    </div>
+                    <div class="date-picker">
+                        <span>June 06, 2026</span>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                </div>
+            </header>
+
+            <section class="summary-cards">
+                <div class="card summary-card">
+                    <div class="card-icon blue-bg"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="card-data">
+                        <span class="card-label">Total Water Produced</span>
+                        <h2 class="card-value">124.8 <span class="unit">ML</span></h2>
+                        <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 8.5% <span class="trend-text">from yesterday</span></span>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card-icon green-bg"><i class="fa-solid fa-water"></i></div>
+                    <div class="card-data">
+                        <span class="card-label">Total Water Stored</span>
+                        <h2 class="card-value">342.6 <span class="unit">ML</span></h2>
+                        <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 5.3% <span class="trend-text">from yesterday</span></span>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card-icon purple-bg"><i class="fa-solid fa-user"></i></div>
+                    <div class="card-data">
+                        <span class="card-label">Total Consumer</span>
+                        <h2 class="card-value">28,543</h2>
+                        <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 2.1% <span class="trend-text">from yesterday</span></span>
+                    </div>
+                </div>
+                <div class="card summary-card alert-card-top">
+                    <div class="card-icon orange-bg"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <div class="card-data">
+                        <span class="card-label">Active Alerts</span>
+                        <h2 class="card-value">3</h2>
+                        <a href="#" class="view-alerts-link">View all alerts</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="middle-grid">
+                <div class="card visual-card">
+                    <h3>System Overview</h3>
+                    <div class="media-container">
+                        <img src="c:\Users\Acer Aspire 3\Pictures\Screenshots\Screenshot 2026-06-14 214016.png" alt="System Overview Map" class="dashboard-image">
+                    </div>
+                </div>
+
+                <div class="card visual-card">
+                    <div class="card-header-inline">
+                        <h3>Water Production</h3>
+                        <div class="dropdown-selector">
+                            This Week <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="production-metric">
+                        <h2>124.8 <span class="unit">ML</span></h2>
+                    </div>
+                    <div class="media-container">
+                        <img src="c:\Users\Acer Aspire 3\Pictures\Screenshots\Screenshot 2026-06-14 214108.png" alt="Water Production Graph" class="dashboard-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-grid">
+                
+                <div class="card panel-card">
+                    <div class="panel-header">
+                        <h3>Recent Alerts</h3>
+                        <a href="#" class="view-all-btn">View all</a>
+                    </div>
+                    <div class="alert-list">
+                        <div class="alert-item error">
+                            <i class="fa-solid fa-triangle-exclamation alert-list-icon"></i>
+                            <div class="alert-details">
+                                <h4>High Pressure in North Zone</h4>
+                                <span class="alert-subtext">North Zone Main Pipeline</span>
+                            </div>
+                            <span class="alert-time">Today, 6:45 AM</span>
+                        </div>
+                        <div class="alert-item warning">
+                            <i class="fa-solid fa-circle-exclamation alert-list-icon"></i>
+                            <div class="alert-details">
+                                <h4>Low Water Level</h4>
+                                <span class="alert-subtext">East Reservoir</span>
+                            </div>
+                            <span class="alert-time">Today, 7:15 AM</span>
+                        </div>
+                        <div class="alert-item maintenance">
+                            <i class="fa-solid fa-circle-exclamation alert-list-icon"></i>
+                            <div class="alert-details">
+                                <h4>Pump Maintenance Due</h4>
+                                <span class="alert-subtext">West Pump Station</span>
+                            </div>
+                            <span class="alert-time">Yesterday, 11:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card panel-card">
+                    <div class="panel-header">
+                        <h3>Top Consumer</h3>
+                        <a href="#" class="view-all-btn">View all</a>
+                    </div>
+                    <div class="consumer-list">
+                        <div class="consumer-item">
+                            <div class="consumer-meta">
+                                <span>Central City District</span>
+                                <strong>12.4 ML</strong>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="consumer-item">
+                            <div class="consumer-meta">
+                                <span>Green Valley Township</span>
+                                <strong>8.7 ML</strong>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="consumer-item">
+                            <div class="consumer-meta">
+                                <span>North Heights Area</span>
+                                <strong>5.9 ML</strong>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                        </div>
+                        <div class="consumer-item">
+                            <div class="consumer-meta">
+                                <span>East Park Community</span>
+                                <strong>3.8 ML</strong>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card panel-card center-align">
+                    <h3>Storage Overview</h3>
+                    <div class="chart-box">
+                        <div class="donut-chart">
+                            <svg width="120" height="120" viewBox="0 0 42 42" class="donut">
+                                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e2e8f0" stroke-width="3"></circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1a73e8" stroke-width="3" stroke-dasharray="68 32" stroke-dashoffset="25"></circle>
+                            </svg>
+                            <div class="donut-center-text">
+                                <span class="donut-percentage">68%</span>
+                            </div>
+                        </div>
+                        <div class="storage-text-metrics">
+                            <h3>342.6 <span class="slash-max">/ 500 ML</span></h3>
+                            <p>Total Capacity</p>
+                        </div>
+                    </div>
+                    <a href="#" class="view-reservoirs-link">View all reservoirs</a>
+                </div>
+
+                <div class="card panel-card center-align">
+                    <h3>System Health</h3>
+                    <div class="health-box">
+                        <div class="pulse-icon-container">
+                            <i class="fa-solid fa-droplet health-droplet"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <div class="health-status-text">
+                            <h4 class="status-green">All Systems Operational</h4>
+                            <p class="status-subtext">System performance is normal</p>
+                        </div>
+                    </div>
+                    <div class="last-checked">
+                        <span>Last checked: Today, 9:00 AM</span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
